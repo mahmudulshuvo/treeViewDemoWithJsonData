@@ -27,8 +27,8 @@ class ViewController: NSViewController {
         
         jsonData = readJsonData()
         var mainArr = [NSMutableDictionary]()
-        mainArr = Root.createListArr(jsonData: jsonData)
-        rootObjects = Root.createList(mainArr: mainArr)
+        mainArr = Root.createRootItemsArr(jsonData: jsonData)
+        rootObjects = Root.createRoot(mainArr: mainArr)
         print("Json feed: \(rootObjects)")
         outlineView.reloadData()
         
