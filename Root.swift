@@ -27,7 +27,7 @@ class Root: NSObject {
         
     }
     
-    class func createList(mainArr: [NSMutableDictionary]) -> [Root] {
+    class func createRoot(mainArr: [NSMutableDictionary]) -> [Root] {
         
         var rootObjects = [Root]()
         var rootItemChild = [RootItem]()
@@ -101,7 +101,7 @@ class Root: NSObject {
         return rootObjects
     }
     
-    class func createListArr(jsonData: JSON) -> [NSMutableDictionary] {
+    class func createRootItemsArr(jsonData: JSON) -> [NSMutableDictionary] {
         
         var mainArr = [NSMutableDictionary]()
         var tempArr = [NSMutableDictionary]()
